@@ -1,0 +1,257 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  background-image: url("https://images.pexels.com/photos/6913773/pexels-photo-6913773.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+.heading1 {
+  /* color: #fff; */
+  /* padding-left: 1076px;
+  padding-top: 30px; */
+ font-family:Georgia, 'Times New Roman', Times, serif ;
+  padding-top: 35px;
+  text-align: center;
+}
+.desc {
+   color: rgb(0, 0, 0); 
+  /* padding-left: 900px;
+  padding-right: 100px; 
+  */
+  padding-top: 30px;
+  text-align: center;
+  font-size: x-large;
+  font-family:Georgia, 'Times New Roman', Times, serif;
+}
+.heading2 {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  text-align: center;
+  /* padding-left: 963px;
+  */
+  padding-top: 100px;
+}
+.heading3 {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  text-align: center;
+  font-size: 50px;
+}
+.heading4 {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  text-align: center;
+  padding-top: 30px;
+  font-size: 40px;
+  font-weight: bold;
+}
+.contact {
+  font-size: 300%;
+  padding-left: 550px;
+  padding-top: 30px;
+}
+.linelist {
+  /* padding-left: 971px; */
+  padding-top: 73px;
+  padding-bottom: 153px;
+  text-align: center;
+  font-size: larger;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+nav {
+  height: 120px;
+  background: rgb(52 179 44);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 50px 0px 100px;
+}
+nav .logo {
+  font-size: 40px;
+  color: #fff;
+  font-weight: 600;
+}
+nav ul {
+  display: flex;
+  list-style: none;
+}
+nav ul li {
+  margin: 0 35px;
+}
+nav ul li a {
+  color: #fff;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  padding: 8px 10px;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+nav img {
+  float: left;
+}
+nav ul li a:hover,
+nav ul li a.active {
+  color: #1b1b1b;
+  background: #fff;
+}
+.row {
+  padding-left: 260px;
+}
+.about1 {
+  /* padding-left: 900px;
+  padding-top: 30px; */
+  /* padding-right: 100px; */
+  padding: 20px;
+  margin: 53px;
+  text-align: justify;
+  font-size: x-large;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+#list {
+  text-align: left;
+}
+.about2 {
+  padding-left: 900px;
+  padding-top: 30px;
+  padding-right: 100px;
+  padding-bottom: 30px;
+  text-align: center;
+  font-size: x-large;
+  font-family:Georgia, 'Times New Roman', Times, serif;
+}
+input[type="text"],
+select,
+textarea {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type="submit"] {
+  background-color: #07afb4;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type="submit"]:hover {
+  background-color:lightgreen;
+}
+
+/* Add a background color and some padding around the form */
+.container {
+  border-radius: 5px;
+  padding: 20px;
+}
+
+.success {
+  text-align: center;
+  color: rgb(0, 17, 255);
+  font-weight: bold;
+  margin-top: 70px;
+}
+
+.homebtn {
+  border: none;
+  color: rgb(255, 255, 255);
+  background-color: rgb(31, 34, 36);
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 20px;
+  margin-top: 20px;
+  transition: all 0.3s ease;
+}
+
+.homebtn:hover {
+  background-color: rgb(0, 195, 255);
+}
+
+.successlogo {
+  text-align: center;
+  font-size: 40px;
+  padding-top: 20px;
+  color: rgb(29, 6, 233);
+  font-weight: bold;
+}
+
+.formbtn {
+  border: none;
+  color: rgb(255, 255, 255);
+  background-color: rgb(63, 129, 184);
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 20px;
+  margin-top: 20px;
+}
+.formbtn:hover {
+  background-color: rgb(16, 15, 92);
+  transition: all 0.3s ease;
+}
+.formd {
+  text-align: center;
+}
+table {
+  width: 600px;
+  line-height: 40px;
+  align-items: center;
+  border: 2px solid black;
+}
+.formtable th,
+tr {
+  background-color: #fff;
+  border-bottom: 2px solid black;
+  border-collapse: collapse;
+  min-width: 200px;
+}
+.tablediv {
+  text-align: center;
+  padding-left: 40px;
+  padding-right: 100px;
+  padding-top: 50px;
+}
+table,
+th,
+td {
+  width: 600px;
+  line-height: 40px;
+  align-items: center;
+  border: 2px solid black;
+}
+.foot {
+  background-color: brown;
+  padding-top: 30px;
+}
+.logo
+{
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  font-style:italic;
+}
+.about1{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}

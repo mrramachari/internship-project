@@ -1,0 +1,161 @@
+<!--contact-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+    crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/7450de4497.js" crossorigin="anonymous"></script>
+  <title>Contact</title>
+</head>
+
+<body>
+  <nav>
+    <div><img src="Bionic.jpg" width="100" height="100"></div>
+    <div class="logo">Leaf now!</div>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+	<li><a href="loggin.html">Log In</a></li>
+      <li><a class="active" href="Contact.html">Contact Us</a></li>
+      <li><a href="about.html">About Us</a></li>
+    </ul>
+  </nav>
+
+  <div class="formd">
+    <button class="formbtn" onclick="window.location.href='formdetails.php';">Form Filled Details(View)</button>
+  </div>
+
+  <h2 class="heading4" style="font-size: 4em;">To get in touch with us ...</h2>
+
+  <!-- form-->
+  <div class="container">
+    <form name="myForm" onsubmit="return validate()" action="success.php" method="POST">
+
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" placeholder="Your name..">
+
+      <label for="lname">Email</label>
+      <input type="text" id="email" name="email" placeholder="Your Email..">
+
+
+      <label for="numbers">phone number</label>
+      <input type="text" id="number" name="number" placeholder="Your phone number ..">
+
+      <label for="Address">Address</label>
+      <textarea id="Address" name="Address" placeholder="Your Address" style="height:200px"></textarea>
+      <label for="Assistance">Type of Assistance you need </label>
+      <textarea id="Assistance" name="Assistance" placeholder="i,e do you want to buy/sell/donate plants" style="height:200px"></textarea>
+      
+
+
+      <input type="submit" value="Submit">
+
+    </form>
+  </div>
+
+
+  <script>
+    function validate() {
+      var name = document.forms["myForm"]["name"].value;
+      var email = document.forms["myForm"]["email"].value;
+      var number = document.forms["myForm"]["number"].value;
+      var Address = document.forms["myForm"]["Address"].value;
+var  Assistance = document.forms["myForm"][ "Assistance"].value
+
+      if (name == "" || email == "" || number == "" || Address == "" ||Assistance == "") {
+        alert("All the fields must be filled out");
+        return false;
+      }
+      else
+        return true;
+
+
+    }
+  </script>
+
+
+
+
+  <footer class="bg-dark text-center text-white">
+    <!-- Grid container -->
+    <div class="container p-4">
+      <!-- Section: Social media -->
+      <section class="mb-4">
+        <!-- Facebook -->
+        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-facebook-f"></i></a>
+
+        <!-- Twitter -->
+        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-twitter"></i></a>
+
+        <!-- Google -->
+        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-google"></i></a>
+
+        <!-- Instagram -->
+        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-instagram"></i></a>
+
+        <!-- Linkedin -->
+        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-linkedin-in"></i></a>
+
+        <!-- Github -->
+        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-github"></i></a>
+      </section>
+      <!-- Section: Social media -->
+
+      <!-- Section: Links -->
+      <section class="">
+        <!--Grid row-->
+        <div class="row">
+          <!--Grid column-->
+          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+            <h5 class="text-uppercase">Email</h5>
+
+            <ul class="list-unstyled mb-0">
+              <li>
+                <a href="#!" class="text-white">leafnow@gmail.com</a>
+              </li>
+            </ul>
+          </div>
+          <!--Grid column-->
+
+          <!--Grid column-->
+          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+            <h5 class="text-uppercase">contact Number</h5>
+
+            <ul class="list-unstyled mb-0">
+              <li>
+                <a href="#!" class="text-white">8415730011</a>
+              </li>
+              <li>
+                <a href="#!" class="text-white">9515731122</a>
+              </li>
+            </ul>
+          </div>
+          <!--Grid column-->
+
+          <!--Grid column-->
+          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+            <h5 class="text-uppercase">Address</h5>
+
+            <ul class="list-unstyled mb-0">
+              <li>
+                <h6>Leaf now,<br>
+                  No 420, 1st Main, 4th Cross, Dollars colony, Bangalore - 560294
+                </h6>
+              </li>
+            </ul>
+          </div>
+          <!--Grid column-->
+  </footer>
+</body>
+
+</html>
